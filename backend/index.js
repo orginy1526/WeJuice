@@ -8,12 +8,12 @@ const juiceFlavors = ['Lemonade🍋', 'Orange🍊', 'Grape🍇', 'Strawberry🍓
 
 app.use(cors());
 
-app.get('/', (req, res) => {
-  // You can send a response or render an HTML file here
-  const randomIndex = Math.floor(Math.random() * juiceFlavors.length);
-  const randomFlavor = juiceFlavors[randomIndex];
-  res.json({ flavor: randomFlavor });
-});
+// app.get('/', (req, res) => {
+//   // You can send a response or render an HTML file here
+//   const randomIndex = Math.floor(Math.random() * juiceFlavors.length);
+//   const randomFlavor = juiceFlavors[randomIndex];
+//   res.json({ flavor: randomFlavor });
+// });
 
 app.get('/api/getRandomFlavor', (req, res) => {
   const randomIndex = Math.floor(Math.random() * juiceFlavors.length);
