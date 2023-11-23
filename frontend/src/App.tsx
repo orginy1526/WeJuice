@@ -60,7 +60,7 @@ function App() {
           <Box
             sx={{
               boxShadow: 0,
-              width: "8rem",
+              width: "12rem",
               height: "6rem",
               bgcolor: (theme) =>
                 theme.palette.mode === "light" ? "#101010" : "#fff",
